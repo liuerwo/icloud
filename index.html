@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" ng-app="reminder">
+<head>
+    <meta charset="UTF-8">
+    <title>iCloud</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/angular.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+<div class="continer">
+    <div class="left">
+        <div class="header">
+            <span class="icloud">iCloud</span>
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    提醒事项
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <span class="new" ng-click="add()">+</span>
+        </div>
+        <div class="content">
+            <div class="planed">
+                <span class="icon-font icon-naozhong"></span>
+                <span class="word"> 已计划</span>
+            </div>
+            <color-list>
+                <li class="list-group-item {{v.theme}}" id="{{v.id}}" ng-click="setcurrent(v)"
+                    ng-repeat="v in colorList">
+                    <div class="l"><span class="circle"></span></div>
+                    <div class="r">
+                        <input type="text" value="{{v.title}}" ng-model="v.title">
+                        <span class="word">{{v.title}}</span>
+                    </div>
+                </li>
+            </color-list>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div class="input-group">
+                    <span class="input-group-addon">
+                        <div class="icon-font icon-sousuo"></div>
+                    </span>
+                <input type="text" class="form-control" placeholder="搜索所有提醒">
+            </div>
+        </div>
+        <div class="content">
+            <div class="new-list">
+                <div class="new {{current.theme}}">{{current.title}}</div>
+                <div class="build" ng-click="cancel()">选项</div>
+                <div class="choose">
+                    <div class="content">
+                        <input class="{{current.theme}}" type="text" value="新列表">
+                        <div class="list-color">列表颜色</div>
+                        <color-click>
+                            <div class="wrap {{v.theme}}" id="{{v.id}}" ng-class="{active:v.theme==current.theme}"
+                                 ng-repeat="v in circle" ng-click="change(v)">
+                                <span></span>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </color-click>
+                        <div class="caozuo">
+                            <button type="button" class="btn btn-link" ng-click="delete()">删除</button>
+                            <button type="button" class="btn btn-link" ng-click="cancel()">取消</button>
+                            <button type="button" class="btn btn-link" ng-click="complete()">完成</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="complete">
+                <span class="caret" ng-click="shouqi()"></span>
+                <span class="already">已完成：</span>
+                <span class="already">{{count()}}</span>
+                <span class="already">项</span>
+                <div class="del-all" ng-click="delall()">删除已完成</div>
+            </div>
+            <div class="complete-list">
+                <input-click>
+                    <li ng-repeat="v in current.todos|filter:{state:1}" id="{{v.id}}">
+                        <div class="wrap active {{current.theme}}" ng-click="v.state=0">
+                            <span></span>
+                        </div>
+                        <input class="title" value="{{v.title}}" ng-model="v.title">
+                        <div style="clear: both;"></div>
+                    </li>
+                </input-click>
+            </div>
+            <div class="list">
+                <todo-click>
+                    <li ng-repeat="v in current.todos|filter:{state:0}" id="{{v.id}}">
+                        <div class="wrap {{current.theme}} active" ng-click="v.state=1">
+                            <span></span>
+                        </div>
+                        <input class="title" value="{{v.title}}" ng-model="v.title">
+                        <div class="del active" ng-click="del(v.id)">删除</div>
+                        <div style="clear: both;"></div>
+                    </li>
+                </todo-click>
+            </div>
+            <div class="new-item">
+                <div class="wrap active" ng-click="v.state=1">
+                    <span></span>
+                </div>
+                <input class="title" value="新条目...">
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+</body>
+</html>

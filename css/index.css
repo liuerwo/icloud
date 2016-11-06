@@ -1,0 +1,1363 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url(iconfont.woff);
+}
+
+.icon-font {
+  font-family: "iconfont";
+}
+
+.icon-naozhong:before {
+  content: "\e63c";
+}
+
+.icon-sousuo:before {
+  content: "\e604";
+}
+
+.continer {
+  background: url("../img/back.png");
+}
+
+.continer .left {
+  overflow-x: hidden;
+  float: left;
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid #747473;
+  background: #383836;
+}
+
+.continer .left .header {
+  border-bottom: 2px solid #31312f;
+}
+
+.continer .left .header .icloud {
+  color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+  margin-left: 6px;
+}
+
+.continer .left .header .btn {
+  background: none;
+  border: none;
+  color: #656564;
+  font-size: 22px;
+}
+
+.continer .left .header .new {
+  display: block;
+  color: #81817f;
+  margin-right: 5px;
+  float: right;
+  font-size: 30px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.continer .left .content .planed {
+  padding: 10px 15px;
+  color: #b2b2b1;
+  background: #383836;
+  border-bottom: 1px solid #31312f;
+}
+
+.continer .left .content .planed .icon-naozhong {
+  font-size: 20px;
+}
+
+.continer .left .content .planed .word {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.continer .left .content .list-group {
+  color: #b2b2b1;
+}
+
+.continer .left .content .list-group .list-group-item {
+  background: #383836;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.continer .left .content .list-group .list-group-item.active {
+  background: #31312f;
+}
+
+.continer .left .content .list-group .list-group-item.orange .l .circle {
+  background-position: left -2px bottom -2px;
+}
+
+.continer .left .content .list-group .list-group-item .l {
+  display: inline-block;
+}
+
+.continer .left .content .list-group .list-group-item .l .circle {
+  vertical-align: middle;
+  background: url(../img/circle.png) no-repeat center bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.continer .left .content .list-group .list-group-item .r {
+  width: 88%;
+  display: inline-block;
+  border-bottom: 1px solid #31312f;
+  position: absolute;
+}
+
+.continer .left .content .list-group .list-group-item .r input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+  outline: none;
+  z-index: 10;
+}
+
+.continer .left .content .list-group .list-group-item .r input.active {
+  display: block;
+}
+
+.continer .left .content .list-group .list-group-item .r .word {
+  visibility: visible;
+}
+
+.continer .left .content .list-group .list-group-item .r .word.active {
+  visibility: hidden;
+}
+
+.continer .left .content .list-group .list-group-item .r .badge {
+  float: right;
+}
+
+.continer .left .content .list-group .list-group-item {
+  background: #383836;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.continer .left .content .list-group .list-group-item.active {
+  background: #31312f;
+}
+
+.continer .left .content .list-group .list-group-item.pink .l .circle {
+  background-position: left -2px bottom -25px;
+}
+
+.continer .left .content .list-group .list-group-item .l {
+  display: inline-block;
+}
+
+.continer .left .content .list-group .list-group-item .l .circle {
+  vertical-align: middle;
+  background: url(../img/circle.png) no-repeat center bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.continer .left .content .list-group .list-group-item .r {
+  width: 88%;
+  display: inline-block;
+  border-bottom: 1px solid #31312f;
+  position: absolute;
+}
+
+.continer .left .content .list-group .list-group-item .r input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+  outline: none;
+  z-index: 10;
+}
+
+.continer .left .content .list-group .list-group-item .r input.active {
+  display: block;
+}
+
+.continer .left .content .list-group .list-group-item .r .word {
+  visibility: visible;
+}
+
+.continer .left .content .list-group .list-group-item .r .word.active {
+  visibility: hidden;
+}
+
+.continer .left .content .list-group .list-group-item .r .badge {
+  float: right;
+}
+
+.continer .left .content .list-group .list-group-item {
+  background: #383836;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.continer .left .content .list-group .list-group-item.active {
+  background: #31312f;
+}
+
+.continer .left .content .list-group .list-group-item.brown .l .circle {
+  background-position: left -2px bottom -50px;
+}
+
+.continer .left .content .list-group .list-group-item .l {
+  display: inline-block;
+}
+
+.continer .left .content .list-group .list-group-item .l .circle {
+  vertical-align: middle;
+  background: url(../img/circle.png) no-repeat center bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.continer .left .content .list-group .list-group-item .r {
+  width: 88%;
+  display: inline-block;
+  border-bottom: 1px solid #31312f;
+  position: absolute;
+}
+
+.continer .left .content .list-group .list-group-item .r input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+  outline: none;
+  z-index: 10;
+}
+
+.continer .left .content .list-group .list-group-item .r input.active {
+  display: block;
+}
+
+.continer .left .content .list-group .list-group-item .r .word {
+  visibility: visible;
+}
+
+.continer .left .content .list-group .list-group-item .r .word.active {
+  visibility: hidden;
+}
+
+.continer .left .content .list-group .list-group-item .r .badge {
+  float: right;
+}
+
+.continer .left .content .list-group .list-group-item {
+  background: #383836;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.continer .left .content .list-group .list-group-item.active {
+  background: #31312f;
+}
+
+.continer .left .content .list-group .list-group-item.yellow .l .circle {
+  background-position: left -2px bottom -78px;
+}
+
+.continer .left .content .list-group .list-group-item .l {
+  display: inline-block;
+}
+
+.continer .left .content .list-group .list-group-item .l .circle {
+  vertical-align: middle;
+  background: url(../img/circle.png) no-repeat center bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.continer .left .content .list-group .list-group-item .r {
+  width: 88%;
+  display: inline-block;
+  border-bottom: 1px solid #31312f;
+  position: absolute;
+}
+
+.continer .left .content .list-group .list-group-item .r input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+  outline: none;
+  z-index: 10;
+}
+
+.continer .left .content .list-group .list-group-item .r input.active {
+  display: block;
+}
+
+.continer .left .content .list-group .list-group-item .r .word {
+  visibility: visible;
+}
+
+.continer .left .content .list-group .list-group-item .r .word.active {
+  visibility: hidden;
+}
+
+.continer .left .content .list-group .list-group-item .r .badge {
+  float: right;
+}
+
+.continer .left .content .list-group .list-group-item {
+  background: #383836;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.continer .left .content .list-group .list-group-item.active {
+  background: #31312f;
+}
+
+.continer .left .content .list-group .list-group-item.blue .l .circle {
+  background-position: left -2px bottom -102px;
+}
+
+.continer .left .content .list-group .list-group-item .l {
+  display: inline-block;
+}
+
+.continer .left .content .list-group .list-group-item .l .circle {
+  vertical-align: middle;
+  background: url(../img/circle.png) no-repeat center bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.continer .left .content .list-group .list-group-item .r {
+  width: 88%;
+  display: inline-block;
+  border-bottom: 1px solid #31312f;
+  position: absolute;
+}
+
+.continer .left .content .list-group .list-group-item .r input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+  outline: none;
+  z-index: 10;
+}
+
+.continer .left .content .list-group .list-group-item .r input.active {
+  display: block;
+}
+
+.continer .left .content .list-group .list-group-item .r .word {
+  visibility: visible;
+}
+
+.continer .left .content .list-group .list-group-item .r .word.active {
+  visibility: hidden;
+}
+
+.continer .left .content .list-group .list-group-item .r .badge {
+  float: right;
+}
+
+.continer .left .content .list-group .list-group-item {
+  background: #383836;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.continer .left .content .list-group .list-group-item.active {
+  background: #31312f;
+}
+
+.continer .left .content .list-group .list-group-item.green .l .circle {
+  background-position: left -2px bottom -126px;
+}
+
+.continer .left .content .list-group .list-group-item .l {
+  display: inline-block;
+}
+
+.continer .left .content .list-group .list-group-item .l .circle {
+  vertical-align: middle;
+  background: url(../img/circle.png) no-repeat center bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.continer .left .content .list-group .list-group-item .r {
+  width: 88%;
+  display: inline-block;
+  border-bottom: 1px solid #31312f;
+  position: absolute;
+}
+
+.continer .left .content .list-group .list-group-item .r input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+  outline: none;
+  z-index: 10;
+}
+
+.continer .left .content .list-group .list-group-item .r input.active {
+  display: block;
+}
+
+.continer .left .content .list-group .list-group-item .r .word {
+  visibility: visible;
+}
+
+.continer .left .content .list-group .list-group-item .r .word.active {
+  visibility: hidden;
+}
+
+.continer .left .content .list-group .list-group-item .r .badge {
+  float: right;
+}
+
+.continer .left .content .list-group .list-group-item {
+  background: #383836;
+  border-radius: 0;
+  border: 0;
+  font-size: 18px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.continer .left .content .list-group .list-group-item.active {
+  background: #31312f;
+}
+
+.continer .left .content .list-group .list-group-item.purple .l .circle {
+  background-position: left -2px bottom -150px;
+}
+
+.continer .left .content .list-group .list-group-item .l {
+  display: inline-block;
+}
+
+.continer .left .content .list-group .list-group-item .l .circle {
+  vertical-align: middle;
+  background: url(../img/circle.png) no-repeat center bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.continer .left .content .list-group .list-group-item .r {
+  width: 88%;
+  display: inline-block;
+  border-bottom: 1px solid #31312f;
+  position: absolute;
+}
+
+.continer .left .content .list-group .list-group-item .r input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  display: none;
+  outline: none;
+  z-index: 10;
+}
+
+.continer .left .content .list-group .list-group-item .r input.active {
+  display: block;
+}
+
+.continer .left .content .list-group .list-group-item .r .word {
+  visibility: visible;
+}
+
+.continer .left .content .list-group .list-group-item .r .word.active {
+  visibility: hidden;
+}
+
+.continer .left .content .list-group .list-group-item .r .badge {
+  float: right;
+}
+
+.continer .right {
+  width: 70%;
+  float: right;
+}
+
+.continer .right .top {
+  border-bottom: 2px solid #eaeaea;
+}
+
+.continer .right .top .input-group-addon {
+  background: #f8f8f8;
+  border: none;
+}
+
+.continer .right .top .input-group-addon .icon-font {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.continer .right .top .form-control {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: #f8f8f8;
+}
+
+.continer .right .content .new-list {
+  padding: 15px 0 5px 20px;
+  font-size: 35px;
+  border-bottom: 1px solid #eaeaea;
+  color: #fd9333;
+  position: relative;
+}
+
+.continer .right .content .new-list:after {
+  content: '';
+  clear: both;
+}
+
+.continer .right .content .new-list .new {
+  float: left;
+}
+
+.continer .right .content .new-list .new.orange {
+  color: orange;
+}
+
+.continer .right .content .new-list .new.pink {
+  color: pink;
+}
+
+.continer .right .content .new-list .new.brown {
+  color: brown;
+}
+
+.continer .right .content .new-list .new.yellow {
+  color: yellow;
+}
+
+.continer .right .content .new-list .new.blue {
+  color: blue;
+}
+
+.continer .right .content .new-list .new.green {
+  color: green;
+}
+
+.continer .right .content .new-list .new.purple {
+  color: purple;
+}
+
+.continer .right .content .new-list .build {
+  font-size: 18px;
+  color: #c37846;
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.continer .right .content .new-list .choose {
+  background: #fff;
+  width: 320px;
+  height: 232px;
+  box-shadow: 0 0 3px 3px #e9e9e9;
+  padding: 3px;
+  border-radius: 5px;
+  position: absolute;
+  right: 60px;
+  top: -30px;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.continer .right .content .new-list .choose.active {
+  visibility: visible;
+}
+
+.continer .right .content .new-list .choose .content {
+  border: 2px solid #f7f7f7;
+  padding: 15px;
+}
+
+.continer .right .content .new-list .choose .content input {
+  width: 100%;
+  font-size: 20px;
+}
+
+.continer .right .content .new-list .choose .content input.orange {
+  color: orange;
+}
+
+.continer .right .content .new-list .choose .content input.pink {
+  color: pink;
+}
+
+.continer .right .content .new-list .choose .content input.brown {
+  color: brown;
+}
+
+.continer .right .content .new-list .choose .content input.yellow {
+  color: yellow;
+}
+
+.continer .right .content .new-list .choose .content input.blue {
+  color: blue;
+}
+
+.continer .right .content .new-list .choose .content input.green {
+  color: green;
+}
+
+.continer .right .content .new-list .choose .content input.purple {
+  color: purple;
+}
+
+.continer .right .content .new-list .choose .content .list-color {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6e6e6e;
+}
+
+.continer .right .content .new-list .choose .content .color {
+  font-size: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(2).active {
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(3).active {
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(4).active {
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(5).active {
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(6).active {
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(7).active {
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.orange span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom 0px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(2).active {
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(3).active {
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(4).active {
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(5).active {
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(6).active {
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(7).active {
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.pink span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -25px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(2).active {
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(3).active {
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(4).active {
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(5).active {
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(6).active {
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(7).active {
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.brown span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -50px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(2).active {
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(3).active {
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(4).active {
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(5).active {
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(6).active {
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(7).active {
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.yellow span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -75px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(2).active {
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(3).active {
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(4).active {
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(5).active {
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(6).active {
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(7).active {
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.blue span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -100px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(2).active {
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(3).active {
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(4).active {
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(5).active {
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(6).active {
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(7).active {
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.green span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -125px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(2).active {
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(3).active {
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(4).active {
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(5).active {
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(6).active {
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap:nth-child(7).active {
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .new-list .choose .content .color .wrap.purple span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -150px;
+}
+
+.continer .right .content .new-list .choose .content .caozuo .btn {
+  color: #0d87f6;
+}
+
+.continer .right .content .new-list .choose .content .caozuo .btn:hover {
+  text-decoration: none;
+}
+
+.continer .right .content .new-list .choose .content .caozuo .btn:nth-child(1) {
+  color: #ff706f;
+  margin-right: 90px;
+}
+
+.continer .right .content .new-list .choose .content .caozuo .btn:nth-child(3) {
+  font-weight: 100;
+  border-left: 1px solid #ccc;
+}
+
+.continer .right .content .complete {
+  padding-left: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.continer .right .content .complete .caret {
+  border-top: 13px solid #ccc;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  cursor: pointer;
+  transition: transform .5s ease;
+}
+
+.continer .right .content .complete .caret.active {
+  transform: rotate(-90deg);
+}
+
+.continer .right .content .complete .already {
+  display: inline-block;
+  margin-left: 5px;
+  color: #cfcfcf;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+.continer .right .content .complete .del-all {
+  float: right;
+  color: #F89600;
+  font-size: 18px;
+  line-height: 44px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.continer .right .content .complete-list ul {
+  margin: 0;
+}
+
+.continer .right .content .complete-list ul li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.continer .right .content .complete-list ul li.active {
+  border-top: 1px solid #fab990;
+  border-bottom: 1px solid #fab990;
+  background: #faece1;
+}
+
+.continer .right .content .complete-list ul li .wrap {
+  width: 35px;
+  height: 35px;
+  margin-right: 3px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .complete-list ul li .wrap.orange.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .complete-list ul li .wrap.pink.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .complete-list ul li .wrap.brown.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .complete-list ul li .wrap.yellow.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .complete-list ul li .wrap.blue.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .complete-list ul li .wrap.green.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .complete-list ul li .wrap.purple.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .complete-list ul li .wrap.orange span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom 0px;
+}
+
+.continer .right .content .complete-list ul li .wrap.pink span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -25px;
+}
+
+.continer .right .content .complete-list ul li .wrap.brown span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -50px;
+}
+
+.continer .right .content .complete-list ul li .wrap.yellow span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -75px;
+}
+
+.continer .right .content .complete-list ul li .wrap.blue span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -100px;
+}
+
+.continer .right .content .complete-list ul li .wrap.green span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -125px;
+}
+
+.continer .right .content .complete-list ul li .wrap.purple span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: url(../img/circle.png) no-repeat center bottom;
+  background-position: left 0 bottom -150px;
+}
+
+.continer .right .content .complete-list ul li .title {
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 35px;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+.continer .right .content .list {
+  margin-top: 40px;
+}
+
+.continer .right .content .list ul {
+  margin: 0;
+}
+
+.continer .right .content .list ul li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 20px;
+}
+
+.continer .right .content .list ul li.active {
+  border-top: 1px solid #fab990;
+  border-bottom: 1px solid #fab990;
+  background: #faece1;
+}
+
+.continer .right .content .list ul li .wrap {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+}
+
+.continer .right .content .list ul li .wrap.orange.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -185px;
+}
+
+.continer .right .content .list ul li .wrap.pink.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -220px;
+}
+
+.continer .right .content .list ul li .wrap.brown.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -255px;
+}
+
+.continer .right .content .list ul li .wrap.yellow.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -290px;
+}
+
+.continer .right .content .list ul li .wrap.blue.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -325px;
+}
+
+.continer .right .content .list ul li .wrap.green.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -360px;
+}
+
+.continer .right .content .list ul li .wrap.purple.active {
+  background: url(../img/circle.png) no-repeat;
+  background-size: 35px;
+  background-position: left 0 bottom -395px;
+}
+
+.continer .right .content .list ul li .title {
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 35px;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+.continer .right .content .list ul li .del {
+  float: right;
+  margin-right: 40px;
+  color: #fab990;
+  display: none;
+  cursor: pointer;
+}
+
+.continer .right .content .list ul li .del.active {
+  display: block;
+}
+
+.continer .right .content .new-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 20px;
+}
+
+.continer .right .content .new-item.active {
+  border-top: 1px solid #fab990;
+  border-bottom: 1px solid #fab990;
+  background: #faece1;
+}
+
+.continer .right .content .new-item .wrap {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+  visibility: hidden;
+}
+
+.continer .right .content .new-item .wrap.active {
+  border: 2px solid #fc9434;
+}
+
+.continer .right .content .new-item .title {
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 35px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #AEAEAE;
+  font-size: 18px;
+}
